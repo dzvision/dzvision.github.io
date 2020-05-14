@@ -38,6 +38,7 @@ center{ line-height: 48px; color: #919191;}
     </span>
 	<hr />
 	<center>client: 64.120.114.178, server: e96d048, time: <%- now %></center>
+</div>
 </script>	
 <script type="text/javascript" src="http://www.beijing.gov.cn/cdn-cgi/js/underscore_min_1.8.3.js"></script>
 </head>
@@ -45,9 +46,19 @@ center{ line-height: 48px; color: #919191;}
 <div class="online-desc-con" style="width:640px;padding-top:15px;margin:34px auto;">
 	<img alt="" style="margin: 0 auto 17px auto;" src="http://www.beijing.gov.cn/cdn-cgi/image/protected.png" />
     <div id="content_rendered"></div>
-	<hr />
-	<center>client: 64.120.114.178, server: e96d048, time: 2020-05-12 14:08:53</center>
+	<div id="getIP">
+	<center>client: 64.120.114.178 <%- client_ipadd %>, server: e96d048</center>
+	</div>
+
 </div>
+<!--
+<script type="application/javascript">
+  function getIP(json) {
+	var ipadd = json.ip;
+	document.getElementById('content_rendered').innerHTML = ipadd;
+  }
+</script>
+-->
 
 <script>
 void(function fuckie6(){if(location.hash && /MSIE 6/.test(navigator.userAgent) && !/jsl_sec/.test(location.href)){location.href = location.href.split('#')[0] + '&jsl_sec' + location.hash}})();
@@ -58,11 +69,21 @@ var content = _.template(document.getElementById('content_tpl').innerHTML)({
     now: new Date(new Date() - -8 * 3600000).toISOString().substr(0, 19).replace('T', ' '),
 	rule_id: parseInt(Math.floor(Math.random() * (80000-10000)+10000)),
     from: encodeURIComponent(document.referrer.substr(0, 1024)),
-    client_ip: '64.120.114.178',
+	client_ip: 'na',
     ref: encodeURIComponent(document.URL.substr(0, 1024))
 });
 document.getElementById('content_rendered').innerHTML = content;
 </script>
+
+<script type="application/javascript">
+  function getIP(json) {
+	var ipadd = document.getElementById('getIP').innerHTML({
+	client_ipadd: json.ip
+	})
+  }
+</script>
+<script type="application/javascript" src="https://freegeoip.app/json/?callback=getIP"></script>
+
 <div style="display:none;">
 </div>
 </body>
