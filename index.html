@@ -1,184 +1,566 @@
-<!DOCTYPE HTML>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>GitHub Page</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-	</head>
-	<body>
+<!DOCTYPE html>
+<html lang="zh-CN" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#fafaf9" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1c1917" media="(prefers-color-scheme: dark)" />
+    <meta name="description" content="dzvision 的个人导航页 —— 项目与工具集合" />
+    <title>个人导航 · dzvision</title>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <!-- Preconnect for fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+SC:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<a href="index.html" class="logo"><strong>GitHub</strong> <span>by me</span></a>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+    <style id="theme-vars">
+:root {
+  /* Core palette */
+  --brand-50: #f0fdf6;
+  --brand-100: #dcfce9;
+  --brand-200: #bbf7d4;
+  --brand-300: #86efad;
+  --brand-400: #4ade80;
+  --brand-500: #22c55e;
+  --brand-600: #16a34a;
+  --brand-700: #15803d;
+  --brand-800: #166534;
+  --brand-900: #14532d;
 
-				<!-- Menu -->
-					<nav id="menu">
-						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="/fake-error-page">Error</a></li>
-							<li><a href="/blog">Personal Blog</a></li>
-							<li><a href="mobilecarrier.html">Mobile Plan Change</a></li>
-							<li><a href="/idgen">ID Card Random Genarator</a></li>
-							<li><a href="BackupSSRSuggest.html">SSR/V2Ray Carrier</a></li>
-						</ul>
-						<ul class="actions vertical">
-							<li><a href="#" class="button fit">Close</a></li>
-						</ul>
-					</nav>
+  /* Semantic tokens (light) */
+  --brand-background: #fafaf9;
+  --brand-foreground: #1c1917;
+  --brand-card: #ffffff;
+  --brand-card-foreground: #1c1917;
+  --brand-popover: #ffffff;
+  --brand-popover-foreground: #1c1917;
+  --brand-primary: #16a34a;
+  --brand-primary-foreground: #ffffff;
+  --brand-muted: #f5f5f4;
+  --brand-muted-foreground: #78716c;
+  --brand-border: #e7e5e4;
+  --brand-input: #e7e5e4;
+  --brand-ring: #16a34a;
+  --brand-radius-sm: 6px;
+  --brand-radius-md: 10px;
+  --brand-radius-lg: 16px;
 
-				<!-- Banner -->
-					<section id="banner" class="major">
-						<div class="inner">
-							<header class="major">
-								<h1>Hi, here is my GitHub Page</h1>
-							</header>
-							<div class="content">
-								<p>The main idea for this page is for error message html collection which enable us to create a fake error message web page.</p>
-								<ul class="actions">
-									<li><a href="/fake-error-page" class="button next scrolly">Get Started</a></li>
-								</ul>
-							</div>
-						</div>
-					</section>
+  /* State colors */
+  --state-success: #16a34a;
+  --state-warning: #d97706;
+  --state-error: #dc2626;
+  --state-info: #2563eb;
 
-				<!-- Main -->
-					<div id="main">
+  /* Blob colors */
+  --blob-1: var(--brand-200);
+  --blob-2: var(--brand-100);
+  --blob-3: #fef3c7;
+}
 
-						<!-- One -->
-							<section id="one" class="tiles">
-								<article>
-									<span class="image">
-										<img src="images/pic01.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="/fake-error-page" class="link">Set of Error Message HTML code</a></h3>
-										<p>Currently we have Heroku and Cloudflare</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic02.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="/blog" class="link">Blog</a></h3>
-										<p>This is a blog just for my personal use.</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic03.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="mobilecarrier.html" class="link">Mobile Plan</a></h3>
-										<p>Change your mobile plan even if you are already subscribed.</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic04.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="/idgen" class="link">ID Genarator</a></h3>
-										<p>Genarate Random ID Card Number</p>
-									</header>
-								</article>
-							</section>
+/* Dark mode tokens */
+html.dark {
+  --brand-background: #0c0a09;
+  --brand-foreground: #fafaf9;
+  --brand-card: #1c1917;
+  --brand-card-foreground: #fafaf9;
+  --brand-popover: #1c1917;
+  --brand-popover-foreground: #fafaf9;
+  --brand-primary: #22c55e;
+  --brand-primary-foreground: #052e16;
+  --brand-muted: #292524;
+  --brand-muted-foreground: #a8a29e;
+  --brand-border: #44403c;
+  --brand-input: #44403c;
+  --brand-ring: #22c55e;
 
-					</div>
+  --blob-1: #14532d;
+  --blob-2: #166534;
+  --blob-3: #78350f;
+}
 
-				<!-- Contact -->
-					<section id="contact">
-						<div class="inner">
-							<section>
-								<form method="post" action="https://formspree.io/mrgyeqpp">
-									<div class="field half first">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field half">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="6"></textarea>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="special" /></li>
-										<li><input type="reset" value="Clear" /></li>
-									</ul>
-								</form>
-							</section>
-							<section class="split">
-								<section>
-									<div class="contact-method">
-										<span class="icon alt fa-envelope"></span>
-										<h3>Email</h3>
-										<a href="#">contact@example.com</a>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon alt fa-phone"></span>
-										<h3>Phone</h3>
-										<span>Phone Hidden</span>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon alt fa-home"></span>
-										<h3>Address</h3>
-										<span>1038 Nanjing West Road<br />
-										Shanghai, 20041<br />
-										China</span>
-									</div>
-								</section>
-							</section>
-						</div>
-					</section>
+/* Typography */
+.brand-heading {
+  font-family: 'Inter', 'Noto Sans SC', system-ui, -apple-system, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+.brand-heading-sm { font-size: 1.125rem; }
+.brand-heading-md { font-size: 1.5rem; }
+.brand-heading-lg { font-size: 2rem; }
+.brand-heading-xl { font-size: 2.5rem; }
 
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; dzvision</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer>
+.brand-body {
+  font-family: 'Inter', 'Noto Sans SC', system-ui, -apple-system, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.brand-body-sm { font-size: 0.875rem; }
+.brand-body-md { font-size: 1rem; }
+.brand-body-lg { font-size: 1.125rem; }
 
-			</div>
+.brand-mono {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+    </style>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.3.1/dist/index.global.js"></script>
+    <script src="https://unpkg.com/lucide@1.8.0/dist/umd/lucide.min.js"></script>
 
-	</body>
+    <style type="text/tailwindcss">
+  @theme inline {
+    --color-background: var(--brand-background);
+    --color-foreground: var(--brand-foreground);
+    --color-card: var(--brand-card);
+    --color-card-foreground: var(--brand-card-foreground);
+    --color-popover: var(--brand-popover);
+    --color-popover-foreground: var(--brand-popover-foreground);
+    --color-primary: var(--brand-primary);
+    --color-primary-foreground: var(--brand-primary-foreground);
+    --color-muted: var(--brand-muted);
+    --color-muted-foreground: var(--brand-muted-foreground);
+    --color-border: var(--brand-border);
+    --color-input: var(--brand-input);
+    --color-ring: var(--brand-ring);
+    --radius-sm: var(--brand-radius-sm);
+    --radius-md: var(--brand-radius-md);
+    --radius-lg: var(--brand-radius-lg);
+  }
+  @layer base {
+    body { background: var(--brand-background); color: var(--brand-foreground); }
+    td, th { @apply break-words; word-break: break-all; word-break: auto-phrase; }
+    th { @apply whitespace-nowrap; }
+  }
+    </style>
+
+    <style id="semantic-token-fallback">
+      .bg-background { background-color: var(--brand-background); }
+      .text-background { color: var(--brand-background); }
+      .border-background { border-color: var(--brand-background); }
+      .ring-background { --tw-ring-color: var(--brand-background); }
+      .bg-foreground { background-color: var(--brand-foreground); }
+      .text-foreground { color: var(--brand-foreground); }
+      .border-foreground { border-color: var(--brand-foreground); }
+      .ring-foreground { --tw-ring-color: var(--brand-foreground); }
+      .bg-card { background-color: var(--brand-card); }
+      .text-card { color: var(--brand-card); }
+      .border-card { border-color: var(--brand-card); }
+      .ring-card { --tw-ring-color: var(--brand-card); }
+      .bg-card-foreground { background-color: var(--brand-card-foreground); }
+      .text-card-foreground { color: var(--brand-card-foreground); }
+      .border-card-foreground { border-color: var(--brand-card-foreground); }
+      .ring-card-foreground { --tw-ring-color: var(--brand-card-foreground); }
+      .bg-popover { background-color: var(--brand-popover); }
+      .text-popover { color: var(--brand-popover); }
+      .border-popover { border-color: var(--brand-popover); }
+      .ring-popover { --tw-ring-color: var(--brand-popover); }
+      .bg-popover-foreground { background-color: var(--brand-popover-foreground); }
+      .text-popover-foreground { color: var(--brand-popover-foreground); }
+      .border-popover-foreground { border-color: var(--brand-popover-foreground); }
+      .ring-popover-foreground { --tw-ring-color: var(--brand-popover-foreground); }
+      .bg-primary { background-color: var(--brand-primary); }
+      .text-primary { color: var(--brand-primary); }
+      .border-primary { border-color: var(--brand-primary); }
+      .ring-primary { --tw-ring-color: var(--brand-primary); }
+      .bg-primary-foreground { background-color: var(--brand-primary-foreground); }
+      .text-primary-foreground { color: var(--brand-primary-foreground); }
+      .border-primary-foreground { border-color: var(--brand-primary-foreground); }
+      .ring-primary-foreground { --tw-ring-color: var(--brand-primary-foreground); }
+      .bg-muted { background-color: var(--brand-muted); }
+      .text-muted { color: var(--brand-muted); }
+      .border-muted { border-color: var(--brand-muted); }
+      .ring-muted { --tw-ring-color: var(--brand-muted); }
+      .bg-muted-foreground { background-color: var(--brand-muted-foreground); }
+      .text-muted-foreground { color: var(--brand-muted-foreground); }
+      .border-muted-foreground { border-color: var(--brand-muted-foreground); }
+      .ring-muted-foreground { --tw-ring-color: var(--brand-muted-foreground); }
+      .bg-border { background-color: var(--brand-border); }
+      .text-border { color: var(--brand-border); }
+      .border-border { border-color: var(--brand-border); }
+      .ring-border { --tw-ring-color: var(--brand-border); }
+      .bg-input { background-color: var(--brand-input); }
+      .text-input { color: var(--brand-input); }
+      .border-input { border-color: var(--brand-input); }
+      .ring-input { --tw-ring-color: var(--brand-input); }
+      .bg-ring { background-color: var(--brand-ring); }
+      .text-ring { color: var(--brand-ring); }
+      .border-ring { border-color: var(--brand-ring); }
+      .ring-ring { --tw-ring-color: var(--brand-ring); }
+    </style>
+
+    <style>
+      html, body { -webkit-tap-highlight-color: transparent; }
+      body {
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      [data-icon] {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-mask-size: contain;
+        mask-size: contain;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-position: center;
+        background-color: currentColor;
+      }
+
+      /* Animated background blobs */
+      .bg-blobs {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        overflow: hidden;
+        pointer-events: none;
+      }
+      .bg-blobs .blob {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(80px);
+        opacity: 0.35;
+        animation: float-drift 20s ease-in-out infinite alternate;
+      }
+      .bg-blobs .blob-1 {
+        width: 500px; height: 500px;
+        background: var(--blob-1);
+        top: -10%; left: -8%;
+        animation-duration: 22s;
+      }
+      .bg-blobs .blob-2 {
+        width: 400px; height: 400px;
+        background: var(--blob-2);
+        bottom: -5%; right: -6%;
+        animation-duration: 26s;
+        animation-delay: -5s;
+      }
+      .bg-blobs .blob-3 {
+        width: 300px; height: 300px;
+        background: var(--blob-3);
+        top: 40%; left: 55%;
+        animation-duration: 30s;
+        animation-delay: -10s;
+        opacity: 0.2;
+      }
+      @keyframes float-drift {
+        0%   { transform: translate(0, 0) scale(1); }
+        33%  { transform: translate(30px, -20px) scale(1.05); }
+        66%  { transform: translate(-20px, 15px) scale(0.95); }
+        100% { transform: translate(10px, -10px) scale(1.02); }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .bg-blobs .blob { animation: none; }
+      }
+
+      /* Staggered entrance animations */
+      .reveal {
+        opacity: 0;
+        transform: translateY(8px);
+        animation: reveal-in 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+      @keyframes reveal-in {
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .reveal { animation: none; opacity: 1; transform: none; }
+      }
+
+      /* Card focus ring for keyboard accessibility */
+      .nav-card:focus-visible {
+        outline: 2px solid var(--brand-ring);
+        outline-offset: 2px;
+      }
+      /* Card active/press feedback for touch */
+      .nav-card:active {
+        transform: translateY(0) scale(0.99);
+      }
+
+      /* Search input focus */
+      .search-input:focus {
+        outline: none;
+        border-color: var(--brand-ring);
+        box-shadow: 0 0 0 3px color-mix(in srgb, var(--brand-ring) 22%, transparent);
+      }
+
+      /* Icon button focus ring */
+      .icon-btn:focus-visible {
+        outline: 2px solid var(--brand-ring);
+        outline-offset: 2px;
+      }
+
+      /* Empty state for search */
+      .empty-state {
+        opacity: 0;
+        pointer-events: none;
+        max-height: 0;
+        transition: opacity 0.2s ease, max-height 0.2s ease;
+      }
+      .empty-state.visible {
+        opacity: 1;
+        pointer-events: auto;
+        max-height: 200px;
+      }
+
+      /* Mobile adjustments */
+      @media (max-width: 640px) {
+        .brand-heading-xl { font-size: 2rem; }
+        .brand-body-lg { font-size: 1rem; }
+        .bg-blobs .blob { filter: blur(60px); }
+        .bg-blobs .blob-1 { width: 320px; height: 320px; }
+        .bg-blobs .blob-2 { width: 260px; height: 260px; }
+        .bg-blobs .blob-3 { width: 200px; height: 200px; }
+      }
+
+      /* Use safe-area insets on mobile devices */
+      .safe-top { padding-top: env(safe-area-inset-top); }
+      .safe-bottom { padding-bottom: env(safe-area-inset-bottom); }
+    </style>
+</head>
+<body class="min-h-screen font-sans antialiased">
+    <!-- Animated background blobs -->
+    <div class="bg-blobs" aria-hidden="true">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Top-right controls: theme toggle -->
+    <div class="fixed top-4 right-4 sm:top-6 sm:right-6 z-10 safe-top">
+      <button id="theme-toggle"
+              type="button"
+              aria-label="切换主题"
+              title="切换深色/浅色模式"
+              class="icon-btn inline-flex items-center justify-center w-10 h-10 rounded-md bg-card border border-border text-card-foreground transition-colors hover:bg-muted">
+        <i data-lucide="sun" class="w-5 h-5 hidden dark:inline-block"></i>
+        <i data-lucide="moon" class="w-5 h-5 inline-block dark:hidden"></i>
+      </button>
+    </div>
+
+    <main class="min-h-screen flex flex-col items-center">
+      <!-- Hero / Intro Section -->
+      <section class="w-full flex flex-col items-center pt-16 pb-8 px-4 sm:px-6 reveal" style="animation-delay: 0.05s;">
+        <h1 class="brand-heading brand-heading-xl text-foreground text-center"
+            style="text-wrap: balance; word-break: keep-all; overflow-wrap: break-word;">
+          Hi, I'm dzvision
+        </h1>
+        <p class="brand-body brand-body-lg text-muted-foreground mt-3">
+          My projects &amp; tools
+        </p>
+      </section>
+
+      <!-- Search / Filter -->
+      <section class="w-full max-w-3xl px-4 sm:px-6 pb-6 reveal" style="animation-delay: 0.15s;" aria-label="搜索导航卡片">
+        <div class="relative mx-auto max-w-md">
+          <i data-lucide="search" class="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground pointer-events-none"></i>
+          <input id="search"
+                 type="search"
+                 inputmode="search"
+                 autocomplete="off"
+                 spellcheck="false"
+                 placeholder="搜索项目…  (按 / 快速聚焦)"
+                 aria-label="搜索项目"
+                 class="search-input w-full pl-9 pr-9 py-2 text-sm bg-card border border-border rounded-md text-card-foreground placeholder:text-muted-foreground transition-colors" />
+          <kbd id="search-hint"
+               class="hidden sm:inline-flex absolute right-3 top-1/2 -translate-y-1/2 items-center gap-0.5 px-1.5 py-0.5 text-[10px] font-mono text-muted-foreground bg-muted border border-border rounded">
+            /
+          </kbd>
+        </div>
+      </section>
+
+      <!-- Navigation Cards Grid -->
+      <section class="w-full max-w-3xl px-4 sm:px-6 pb-16" aria-label="项目导航">
+        <div id="card-grid"
+             class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+          <!-- Card 1: Error Page Collection -->
+          <a href="/fake-error-page"
+             data-keywords="error page collection heroku cloudflare error message html 错误页"
+             class="nav-card reveal flex items-start gap-3.5 p-4 bg-card border border-border rounded-lg transition-transform duration-200 hover:-translate-y-0.5 group"
+             style="box-shadow: 0 1px 3px rgba(0,0,0,0.03); animation-delay: 0.2s;">
+            <div class="shrink-0 flex items-center justify-center w-10 h-10 rounded-md"
+                 style="background-color: var(--brand-50);">
+              <i data-lucide="alert-circle" class="w-5 h-5" style="color: var(--brand-primary);"></i>
+            </div>
+            <div class="min-w-0 flex-1">
+              <h3 class="brand-heading brand-heading-sm text-card-foreground truncate">Error Page Collection</h3>
+              <p class="brand-body brand-body-sm text-muted-foreground mt-1 line-clamp-2">Error message HTML code collection — Heroku &amp; Cloudflare error pages</p>
+            </div>
+          </a>
+
+          <!-- Card 2: Personal Blog -->
+          <a href="/blog"
+             data-keywords="blog personal notes thoughts 博客 笔记"
+             class="nav-card reveal flex items-start gap-3.5 p-4 bg-card border border-border rounded-lg transition-transform duration-200 hover:-translate-y-0.5 group"
+             style="box-shadow: 0 1px 3px rgba(0,0,0,0.03); animation-delay: 0.25s;">
+            <div class="shrink-0 flex items-center justify-center w-10 h-10 rounded-md"
+                 style="background-color: var(--brand-50);">
+              <i data-lucide="book-open" class="w-5 h-5" style="color: var(--brand-primary);"></i>
+            </div>
+            <div class="min-w-0 flex-1">
+              <h3 class="brand-heading brand-heading-sm text-card-foreground truncate">Personal Blog</h3>
+              <p class="brand-body brand-body-sm text-muted-foreground mt-1 line-clamp-2">Personal blog for notes and thoughts</p>
+            </div>
+          </a>
+
+          <!-- Card 3: Mobile Plan Change -->
+          <a href="mobilecarrier.html"
+             data-keywords="mobile plan change carrier subscribe 手机 套餐 运营商 携号转网"
+             class="nav-card reveal flex items-start gap-3.5 p-4 bg-card border border-border rounded-lg transition-transform duration-200 hover:-translate-y-0.5 group"
+             style="box-shadow: 0 1px 3px rgba(0,0,0,0.03); animation-delay: 0.3s;">
+            <div class="shrink-0 flex items-center justify-center w-10 h-10 rounded-md"
+                 style="background-color: var(--brand-50);">
+              <i data-lucide="smartphone" class="w-5 h-5" style="color: var(--brand-primary);"></i>
+            </div>
+            <div class="min-w-0 flex-1">
+              <h3 class="brand-heading brand-heading-sm text-card-foreground truncate">Mobile Plan Change</h3>
+              <p class="brand-body brand-body-sm text-muted-foreground mt-1 line-clamp-2">Switch mobile plans even as existing subscriber</p>
+            </div>
+          </a>
+
+          <!-- Card 4: ID Card Generator -->
+          <a href="/idgen"
+             data-keywords="id card generator random number 身份证 生成器 随机"
+             class="nav-card reveal flex items-start gap-3.5 p-4 bg-card border border-border rounded-lg transition-transform duration-200 hover:-translate-y-0.5 group"
+             style="box-shadow: 0 1px 3px rgba(0,0,0,0.03); animation-delay: 0.35s;">
+            <div class="shrink-0 flex items-center justify-center w-10 h-10 rounded-md"
+                 style="background-color: var(--brand-50);">
+              <i data-lucide="fingerprint" class="w-5 h-5" style="color: var(--brand-primary);"></i>
+            </div>
+            <div class="min-w-0 flex-1">
+              <h3 class="brand-heading brand-heading-sm text-card-foreground truncate">ID Card Generator</h3>
+              <p class="brand-body brand-body-sm text-muted-foreground mt-1 line-clamp-2">Random ID card number generator</p>
+            </div>
+          </a>
+
+          <!-- Card 5: SSR/V2Ray Carrier -->
+          <a href="BackupSSRSuggest.html"
+             data-keywords="ssr v2ray carrier comparison suggestions 机场 推荐 代理"
+             class="nav-card reveal flex items-start gap-3.5 p-4 bg-card border border-border rounded-lg transition-transform duration-200 hover:-translate-y-0.5 group"
+             style="box-shadow: 0 1px 3px rgba(0,0,0,0.03); animation-delay: 0.4s;">
+            <div class="shrink-0 flex items-center justify-center w-10 h-10 rounded-md"
+                 style="background-color: var(--brand-50);">
+              <i data-lucide="globe" class="w-5 h-5" style="color: var(--brand-primary);"></i>
+            </div>
+            <div class="min-w-0 flex-1">
+              <h3 class="brand-heading brand-heading-sm text-card-foreground truncate">SSR/V2Ray Carrier</h3>
+              <p class="brand-body brand-body-sm text-muted-foreground mt-1 line-clamp-2">SSR/V2Ray carrier comparison and suggestions</p>
+            </div>
+          </a>
+
+          <!-- Card 6: URL Clash Converter -->
+          <a href="https://dzvision.github.io/urlclash-converter/"
+             data-keywords="url clash converter subscribe 订阅 转换"
+             class="nav-card reveal flex items-start gap-3.5 p-4 bg-card border border-border rounded-lg transition-transform duration-200 hover:-translate-y-0.5 group"
+             style="box-shadow: 0 1px 3px rgba(0,0,0,0.03); animation-delay: 0.45s;">
+            <div class="shrink-0 flex items-center justify-center w-10 h-10 rounded-md"
+                 style="background-color: var(--brand-50);">
+              <i data-lucide="link" class="w-5 h-5" style="color: var(--brand-primary);"></i>
+            </div>
+            <div class="min-w-0 flex-1">
+              <h3 class="brand-heading brand-heading-sm text-card-foreground truncate">URL Clash Converter</h3>
+              <p class="brand-body brand-body-sm text-muted-foreground mt-1 line-clamp-2">URL clash converter tool</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Empty state -->
+        <div id="empty-state" class="empty-state text-center py-12 text-muted-foreground">
+          <i data-lucide="search-x" class="w-8 h-8 mx-auto mb-2 opacity-60"></i>
+          <p class="brand-body brand-body-sm">没有匹配的项目</p>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="mt-auto pb-8 flex items-center gap-2 text-muted-foreground safe-bottom">
+        <i data-lucide="github" class="w-4 h-4"></i>
+        <span class="brand-body brand-body-sm">Built by dzvision</span>
+      </footer>
+    </main>
+
+    <script>
+      // Initialize Lucide icons
+      lucide.createIcons();
+
+      // ---------- Theme toggle ----------
+      (function initTheme() {
+        const STORAGE_KEY = 'dzvision-theme';
+        const root = document.documentElement;
+        const toggle = document.getElementById('theme-toggle');
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const stored = localStorage.getItem(STORAGE_KEY);
+        const initial = stored || (prefersDark ? 'dark' : 'light');
+        applyTheme(initial);
+
+        function applyTheme(mode) {
+          root.classList.remove('light', 'dark');
+          root.classList.add(mode);
+          if (mode === 'dark') {
+            document.querySelector('meta[name="theme-color"]:not([media*="dark"])')?.setAttribute('content', '#1c1917');
+          } else {
+            document.querySelector('meta[name="theme-color"]:not([media*="dark"])')?.setAttribute('content', '#fafaf9');
+          }
+        }
+
+        toggle.addEventListener('click', () => {
+          const next = root.classList.contains('dark') ? 'light' : 'dark';
+          applyTheme(next);
+          localStorage.setItem(STORAGE_KEY, next);
+        });
+      })();
+
+      // ---------- Search / filter ----------
+      (function initSearch() {
+        const input = document.getElementById('search');
+        const grid = document.getElementById('card-grid');
+        const cards = Array.from(grid.querySelectorAll('.nav-card'));
+        const empty = document.getElementById('empty-state');
+        const hint = document.getElementById('search-hint');
+
+        function normalize(s) {
+          return (s || '').toLowerCase().trim();
+        }
+
+        function filter(query) {
+          const q = normalize(query);
+          let visibleCount = 0;
+          cards.forEach((card) => {
+            const title = normalize(card.querySelector('h3')?.textContent);
+            const desc = normalize(card.querySelector('p')?.textContent);
+            const kw = normalize(card.getAttribute('data-keywords'));
+            const hit = !q || title.includes(q) || desc.includes(q) || kw.includes(q);
+            card.style.display = hit ? '' : 'none';
+            if (hit) visibleCount++;
+          });
+          empty.classList.toggle('visible', visibleCount === 0);
+          grid.style.display = visibleCount === 0 ? 'none' : '';
+        }
+
+        input.addEventListener('input', (e) => filter(e.target.value));
+
+        // Keyboard shortcut: "/" to focus search, "Esc" to clear
+        document.addEventListener('keydown', (e) => {
+          const isTyping = ['INPUT', 'TEXTAREA'].includes(document.activeElement?.tagName);
+          if (e.key === '/' && !isTyping) {
+            e.preventDefault();
+            input.focus();
+            input.select();
+          } else if (e.key === 'Escape' && document.activeElement === input) {
+            input.value = '';
+            filter('');
+            input.blur();
+          }
+        });
+
+        // Hide the hint badge once user has focused search at least once
+        input.addEventListener('focus', () => hint && (hint.style.opacity = '0'), { once: true });
+      })();
+
+      // ---------- Re-run Lucide for dynamically shown icons ----------
+      // (empty-state icon needs rendering)
+      lucide.createIcons();
+    </script>
+</body>
 </html>

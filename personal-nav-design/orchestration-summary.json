@@ -1,0 +1,144 @@
+{
+  "skillProvenance": {
+    "name": "solo-design",
+    "version": "2026.07.06.8",
+    "version_source": "skill-version.json",
+    "runtime_skill_dir": "c:\\Users\\gena\\.trae-cn\\builtin\\design\\default\\skills\\solo-design",
+    "recorded_at": "2026-07-19T15:40:30+08:00"
+  },
+  "project": {
+    "name": "个人导航页",
+    "path": "e:\\GitHub\\dzvision.github.io\\personal-nav-design",
+    "operation": "create",
+    "deviceType": "desktop",
+    "language": "zh-CN",
+    "dashboardMode": false,
+    "intentProfile": {
+      "caseFamily": "free_exploration",
+      "graphicStrategy": null,
+      "sourceType": null,
+      "routingReason": "User wants to redesign their GitHub Pages navigation/homepage with no existing .design project and no Design Library"
+    },
+    "replicationMode": null,
+    "sourceUrl": null,
+    "contextReadBudget": {
+      "workflowFileReadLimit": 1,
+      "largeWorkflowFilesCachedInSummary": [],
+      "restoreInputsCached": [],
+      "subAgentReadsFullSummary": false
+    },
+    "readBudgetLedger": [],
+    "dispatchPreflightManifest": [],
+    "cssPreflightEvidence": {
+      "applies": true,
+      "status": "passed",
+      "command": "node c:\\Users\\gena\\.trae-cn\\builtin\\design\\default\\skills\\solo-design\\script\\fill-html-head.mjs e:\\GitHub\\dzvision.github.io\\personal-nav-design\\colors_and_type.css e:\\GitHub\\dzvision.github.io\\personal-nav-design\\.preflight\\preflight.html --title=\"Preflight\" --lang=\"zh-CN\" --prefix=brand",
+      "brandPrefix": "brand",
+      "checks": {
+        "themeVars": "present",
+        "semanticTokenFallback": "present",
+        "themeInline": "present",
+        "tailwindCdn": "present",
+        "htmlClass": "present",
+        "semanticMappings": "resolved"
+      },
+      "retryCount": 0,
+      "blockingReason": null
+    },
+    "repairEntryEvidence": [],
+    "finishReadinessEvidence": {
+      "validationReportSuccess": true,
+      "postValidationMutationDetected": false,
+      "pageSummaryTablePrepared": true,
+      "manualArtifactLinksIncluded": false,
+      "restoreEvidenceReviewPassed": true,
+      "deviceTypeConsistency": {
+        "summaryDeviceType": "desktop",
+        "designDeviceType": "desktop",
+        "status": "matched"
+      },
+      "mobileBackgroundCoverage": {
+        "status": "passed",
+        "unresolvedBodyVars": []
+      }
+    },
+    "referenceCaptureEvidence": null,
+    "visualSpecExcerpt": null,
+    "restoreVisualCheckpoints": null,
+    "restorationContractLite": null,
+    "restoreEvidenceReview": null,
+    "styleDefinitionBrief": "Warm personal tool hub with green primary accent on stone-neutral backgrounds, clean card grid layout, friendly and approachable",
+    "designRead": "personal nav hub / self & friends / warm approachable / medium density / avoid corporate coldness",
+    "designDials": {
+      "layoutVariance": 2,
+      "motionIntensity": 2,
+      "visualDensity": 3
+    },
+    "styleContinuityAnchors": {
+      "colorSystem": {
+        "primaryColorRole": "green-600 for primary accents and highlights",
+        "brandHuePolicy": "free-explore uses no secondary/accent brand hue; warm stone neutrals for surfaces",
+        "stateColors": "semantic success/warning/error/info tokens defined"
+      },
+      "shapeSystem": "rounded-md to rounded-lg for cards, rounded-full for badges",
+      "typographySystem": "Inter + Noto Sans SC, tight letter-spacing for headings",
+      "spacingSystem": "consistent 4px base grid",
+      "componentLanguage": "clean bordered cards with hover lift, minimal shadows",
+      "surfaceAndDepth": "border-first depth, shadow alpha <= 0.05 for static",
+      "imageryAndIconography": "Lucide icons, no emoji as UI icons",
+      "interactionTone": "subtle hover transitions on cards and links"
+    },
+    "specsConstraints": null,
+    "sharedProjectShellContract": null,
+    "generationTree": null
+  },
+  "designSource": {
+    "operatingMode": "free-explore",
+    "libraryIdentity": null,
+    "libraryPath": null,
+    "cssFilePath": "e:\\GitHub\\dzvision.github.io\\personal-nav-design\\colors_and_type.css",
+    "brandPrefix": "brand",
+    "themeMode": "light",
+    "designDecisionSummary": "Green-600 primary on stone neutral background, Inter + Noto Sans SC typography, border-first card depth",
+    "componentContractKind": null,
+    "forbiddenInventedComponents": [],
+    "allowedComponents": null,
+    "styleConstraints": null,
+    "productContext": null,
+    "actualTokenNameReference": []
+  },
+  "pages": [
+    {
+      "nodeId": "page-index",
+      "slug": "index",
+      "title": "首页",
+      "htmlSrc": "pages/index.html",
+      "pageIndex": 1,
+      "stateGroupId": null,
+      "stateRole": null,
+      "baseStatePageId": null,
+      "sharedShellContract": [],
+      "mutableRegions": [],
+      "derivedFromHtmlSrc": null,
+      "derivationType": "original",
+      "sourcePageId": null,
+      "sourceHtmlSrc": null,
+      "pageType": "information-dense",
+      "viewportMode": "document-scroll",
+      "businessScenario": "Personal project links navigation page",
+      "visualNorthStar": "A clean, warm card-grid dashboard that feels like a personal bookmarks page — organized, friendly, and easy to scan",
+      "compositionPattern": "Minimal-Typography-Center with card grid below",
+      "continuityAnchors": [],
+      "libraryRestraintMode": false,
+      "uiKitPath": null,
+      "componentPlan": [],
+      "imagePlan": [],
+      "chartsRequired": false,
+      "miniProgramStyle": false,
+      "qualityRisks": []
+    }
+  ],
+  "assets": [],
+  "wiringPlan": [],
+  "hiddenInteractionPlan": []
+}

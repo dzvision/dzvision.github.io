@@ -1,0 +1,25 @@
+{
+  "success": true,
+  "skillProvenance": {
+    "name": "solo-design",
+    "version": "2026.07.06.8",
+    "version_source": "skill-version.json",
+    "runtime_skill_dir": "c:\\Users\\gena\\.trae-cn\\builtin\\design\\default\\skills\\solo-design",
+    "recorded_at": "2026-07-19T15:40:30+08:00",
+    "read_status": "ok"
+  },
+  "operatingMode": "free-explore",
+  "renderBlockingErrorCount": 0,
+  "softWarningCount": 0,
+  "renderBlockingErrors": [],
+  "softWarnings": [],
+  "repairPlanHints": [],
+  "errorCount": 0,
+  "warningCount": 0,
+  "errors": [],
+  "warnings": [],
+  "designDir": "e:\\GitHub\\dzvision.github.io\\personal-nav-design",
+  "expectedPages": 1,
+  "requireInteractions": null,
+  "checkedAt": "2026-07-19T07:44:47.438Z"
+}
